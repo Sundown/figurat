@@ -1,9 +1,11 @@
 <div align="center">
 <h3>Figurat</h3>
 A new take on centralised dotfile management
+
+This remains a work-in-progress
 </div>
 
-**This remains a work-in-progress**
+
 
 **Features:**
 
