@@ -7,10 +7,12 @@
 
 FILE* ROOT_CONFIG;
 
-char* PREPROCESS(const char* INPUT);
-char* EXPAND(const char* INPUT);
-char* POSTPROCESS(const char* INPUT);
+char* PostProcess(const char* INPUT);
+char* PreProcess(const char* INPUT);
 
-void INIT_INTERPRETER();
+void init_interpreter(void);
+
+#define next_occur(haystack, needle) \
+	((size_t)strstr(haystack, needle) - (size_t)haystack)
 
 #endif /* FIG_GLOBAL_HEADER*/

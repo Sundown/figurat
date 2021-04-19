@@ -1,20 +1,11 @@
 #include "postprocessor.h"
 
-void write(char* filepath, char* contents) {
-  FILE* output;
-  if (!filepath || !strlen(filepath)) {
-    puts("Write error");
-    exit(1);
-  }
+void write(char* path, char* data) {
+	if (!path || !strlen(path)) { fputs("Write error", stderr), exit(1); }
 
-  output = fopen(filepath, "w");
+	FILE* output = fopen(path, "w");
 
-  if (!output) {
-    puts("Open error");
-    exit(1);
-  }
+	if (!output) { fputs("Open error", stderr), exit(1); }
 
-  fprintf(output, "%s", contents);
-
-  fclose(output);
+	fputs(data, output), fclose(output);
 }
