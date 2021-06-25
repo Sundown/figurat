@@ -1,11 +1,10 @@
-<div align="center">
-<h3>Figurat</h3>
+## Superseeded by [Trevellion](https://github.com/sundown/trevellion)
+---
+### Figurat
+
 A new take on centralised dotfile management
 
 This remains a work-in-progress
-</div>
-
-
 
 **Features:**
 
